@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página de usuarios con Flask</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <h4>Hola Usuario</h4>
+    <h4>{{ nombre }}</h4>
+    <p>{{ edad }}</p>
+
+
+    {% if edad > 25 %}
+        <p>Es mayor de edad</p>
+    {% endif %}
+
+    <p>Esto no está dentro del if</p>
+
+    {% for item in lista %}
+        <p>{{ item }}</p>
+    {% endfor %}
+</body>
+</html>
